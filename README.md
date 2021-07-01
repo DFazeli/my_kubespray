@@ -46,6 +46,6 @@ Step3) # If you want Review and change parameters under ``inventory/mycluster/gr
 Step4) # Run ansible playbook if your inventory file is [hosts.yaml] 
          ansible-playbook -i inventory/mycluster/hosts.yaml  -b --private-key=~/.ssh/id_rsa  cluster.yml
        OR  
-         Run ansible playbook if your inventory file is [inventory.ini]
+         Run ansible playbook if your inventory file is [inventory.ini] (Do not forget to introduce your nodes)
            ansible-playbook -i inventory/mycluster/inventory.ini  -b --private-key=~/.ssh/id_rsa  cluster.yml
 ```
