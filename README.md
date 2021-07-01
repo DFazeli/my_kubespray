@@ -39,13 +39,13 @@ Step2) # Set inventory hosts
 Or 
      sudo vim inventory/newcluster/inventory.ini
 
-Step3) # If you want Review and change parameters under ``inventory/mycluster/group_vars``
+Step3) # If you want Review and change parameters under ``inventory/newcluster/group_vars``
       vim inventory/newcluster/group_vars/all/all.yml
       vim inventory/newcluster/group_vars/k8s_cluster/k8s_cluster.yml
 
 Step4) # Run ansible playbook if your inventory file is [hosts.yaml] 
-         ansible-playbook -i inventory/mycluster/hosts.yaml  -b --private-key=~/.ssh/id_rsa  cluster.yml
+         ansible-playbook -i inventory/newcluster/hosts.yaml  -b --private-key=~/.ssh/id_rsa  cluster.yml
        OR  
          Run ansible playbook if your inventory file is [inventory.ini] (Do not forget to introduce your nodes)
-           ansible-playbook -i inventory/mycluster/inventory.ini  -b --private-key=~/.ssh/id_rsa  cluster.yml
+           ansible-playbook -i inventory/newcluster/inventory.ini  -b --private-key=~/.ssh/id_rsa  cluster.yml
 ```
