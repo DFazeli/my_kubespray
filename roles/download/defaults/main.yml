@@ -21,7 +21,7 @@ kubeadm_images: {}
 # if this is set to true will only download files once. Doesn't work
 # on Flatcar Container Linux by Kinvolk unless the download_localhost is true and localhost
 # is running another OS type. Default compress level is 1 (fastest).
-download_run_once: false
+download_run_once: true
 download_compress: 1
 
 # if this is set to true will download container
@@ -32,7 +32,7 @@ download_container: true
 # local caching of docker images or for Flatcar Container Linux by Kinvolk cluster nodes.
 # Otherwise, uses the first node in the kube_control_plane group to store images
 # in the download_run_once mode.
-download_localhost: false
+download_localhost: true
 
 # Always pull images if set to True. Otherwise check by the repo's tag/digest.
 download_always_pull: false
